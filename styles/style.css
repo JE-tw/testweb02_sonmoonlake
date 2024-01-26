@@ -18,7 +18,7 @@ header section.logo {
   flex: 2 1 320px;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 header section.logo img {
   width: 48px;
@@ -26,18 +26,21 @@ header section.logo img {
 }
 header section.logo h1 {
   font-size: 2rem;
-  padding-left: 1rem;
+  padding: 0.5rem;
+  margin: 0;
 }
 header nav {
-  flex: 1 1 350px;
+  flex: 1 1 400px;
+  padding: 0.5rem;
 }
 header nav ul {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
+  margin: 0;
 }
 header nav ul li {
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem;
 }
 header nav ul li a {
   color: black;
@@ -53,12 +56,22 @@ header nav ul li a:hover {
 
 main section.background-img {
   width: 100%;
-  height: 70vh;
+  height: 650px;
 }
 main section.background-img div#carouselTopImg {
   width: 100%;
   position: absolute;
   z-index: -2;
+}
+main section.background-img div#carouselTopImg div.carousel-item {
+  height: 650px;
+  overflow: hidden;
+}
+main section.background-img div#carouselTopImg div.carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main section.background-img div.filter {
   background-color: rgba(0, 0, 0, 0.5);
@@ -84,4 +97,31 @@ main section.info-circles {
 main section.info-circles h3 {
   text-align: center;
   font-size: 2rem;
+}
+main section.info-circles div.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main section.info-circles div.circles div.circle {
+  padding: 1rem;
+  flex: 0 1 250px;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main section.info-circles div.circles div.circle img {
+  width: 80%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+main section.info-circles div.circles div.circle img:hover {
+  transform: scale(1.1, 1.1);
+}
+main section.info-circles div.circles div.circle p {
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */
