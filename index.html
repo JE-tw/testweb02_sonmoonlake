@@ -25,6 +25,12 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <!-- 置底背景圖 -->
+    <img
+      class="fixed-image"
+      src="./images/玄光碼頭地標.jpg"
+      alt="fixed-image"
+    />
     <header>
       <section class="logo">
         <img src="./images/webloge.png" alt="日月潭旅遊logo" />
@@ -55,6 +61,20 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
+                src="./images/金龍山2.jpg"
+                class="d-block w-100"
+                alt="金龍山2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/九族櫻花.jpg"
+                class="d-block w-100"
+                alt="九族櫻花"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
                 src="./images/月牙灣.jpg"
                 class="d-block w-100"
                 alt="月牙灣"
@@ -62,16 +82,16 @@
             </div>
             <div class="carousel-item">
               <img
-                src="./images/九族櫻花.jpg"
+                src="./images/金龍山.jpg"
                 class="d-block w-100"
-                alt="水社碼頭夕陽"
+                alt="金龍山"
               />
             </div>
             <div class="carousel-item">
               <img
-                src="./images/伊達邵碼頭八角亭.jpg"
+                src="./images/日月潭自行車道-水社段.jpg"
                 class="d-block w-100"
-                alt="伊達邵碼頭八角亭"
+                alt="日月潭自行車道-水社段"
               />
             </div>
           </div>
@@ -101,10 +121,43 @@
           </div>
         </div>
       </section>
+      <section class="empty-container">
+        <h3>開始規劃旅遊行程，來一趟日月潭之旅吧</h3>
+      </section>
+      <section class="google-map">
+        <h3>前往日月潭</h3>
+        <p>
+          日月潭位於臺灣南投縣魚池鄉，是一座美麗的高山湖泊。潭面以拉魯島為界，東側形如「日」，西側形如「月」，故名日月潭。<br />其周圍山重水複，林木蒼鬱，潭面廣闊水平如鏡，映照群山變化萬千。
+        </p>
+        <!-- 嵌入GOOGLE地圖 -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116777.92750524377!2d120.82348754370517!3d23.84311499162072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468d5e076ee0005%3A0xec17a6fd5312a528!2z5pel5pyI5r2t!5e0!3m2!1szh-TW!2stw!4v1706277917059!5m2!1szh-TW!2stw"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
       <script>
         var myCarousel = document.querySelector("#myCarousel");
         var carousel = new bootstrap.Carousel(myCarousel);
       </script>
     </main>
+
+    <footer>
+      <h3>關注第一線美景</h3>
+      <section class="sns-link">
+        <a href="https://www.facebook.com/sunmoonlaketw"
+          ><img src="./icons/facebook.svg"
+        /></a>
+        <a href="https://www.instagram.com/sunmoonlaketw/"
+          ><img src="./icons/icons8-instagram.svg"
+        /></a>
+        <a href="https://www.youtube.com/user/sunmoonlake362"
+          ><img src="./icons/youtube.svg"
+        /></a>
+      </section>
+    </footer>
   </body>
 </html>
