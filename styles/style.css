@@ -169,7 +169,7 @@ body footer {
   flex-direction: column;
   text-align: center;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 body footer h3 {
   font-size: 2rem;
@@ -177,6 +177,9 @@ body footer h3 {
 }
 body footer a {
   padding: 0.5rem;
+}
+body footer a:hover img {
+  transform: scale(1.1, 1.1);
 }
 
 @media screen and (max-width: 700px) {

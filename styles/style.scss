@@ -190,13 +190,18 @@ body {
     flex-direction: column;
     text-align: center;
     padding: 2rem;
-    background-color: rgba($color: #000000, $alpha: 0.2);
+    background-color: rgba($color: #000000, $alpha: 0.8);
     h3 {
       font-size: 2rem;
       color: white;
     }
     a {
       padding: 0.5rem;
+      &:hover {
+        img {
+          transform: scale(1.1, 1.1);
+        }
+      }
     }
   }
 }
